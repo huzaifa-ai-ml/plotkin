@@ -246,7 +246,7 @@ plotkin/
 
 ### **Prerequisites**
 
-- **Python 3.13** (or a compatible version for the pinned dependencies)
+- **Python 3.13.5** (or a compatible version for the pinned dependencies)
 - **Git**
 - **pip** package manager
 - A **TMDB API key** from [The Movie Database](https://www.themoviedb.org/settings/api)
