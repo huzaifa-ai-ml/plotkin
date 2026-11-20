@@ -59,7 +59,16 @@ st.markdown(
 
 html, body, .stApp, [class*="css"] { font-family: 'DM Sans', sans-serif; }
 .stApp { background: var(--bg); color: var(--text); }
-header[data-testid="stHeader"], #MainMenu, footer { display: none !important; }
+header[data-testid="stHeader"], #MainMenu, footer,
+[data-testid="stToolbar"], [data-testid="stDecoration"] { display: none !important; }
+
+/* remove the focus outline that appears around the scrolling page area */
+[data-testid="stMain"], [data-testid="stAppViewContainer"], section.main,
+[data-testid="stMain"]:focus, [data-testid="stMain"]:focus-visible,
+[data-testid="stAppViewContainer"]:focus, [data-testid="stAppViewContainer"]:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
 .block-container { max-width: 1320px; padding-top: 1.5rem; padding-bottom: 4rem; }
 
 /* ---------- top bar ---------- */
